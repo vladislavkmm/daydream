@@ -1,14 +1,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectedTab:Int = 0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView(selection:$selectedTab) {
+            homeScreen()
+                .tabItem {
+                    Label("Home", systemImage: "house.fill")
+                }
+                .tag(0)
         }
-        .padding()
     }
 }
 
