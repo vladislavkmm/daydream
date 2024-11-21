@@ -3,7 +3,7 @@ import SwiftUI
 struct homeScreen: View {
     var body: some View {
         ScrollView{
-            physicsView()
+            Text("blank")
         }
     }
 }
