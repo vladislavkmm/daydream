@@ -1,11 +1,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selectedTab:Int = 0
-    
     var body: some View {
-        TabView(selection:$selectedTab) {
-            homeScreen()
+        TabView {
+            Tab("homepage", systemImage: "house") {
+                homePage()
+            }
+
+            Tab("loans", systemImage: "creditcard") {
+                loansPage()
+            }
+
+
+            Tab("history", systemImage: "gobackward") {
+                historyPage()
+            }
+            
+            Tab("profile", systemImage: "person.crop.circle.fill") {
+                profilePage()
+            }
         }
     }
 }
