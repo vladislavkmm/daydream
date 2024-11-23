@@ -12,7 +12,7 @@ struct ContentView: View {
             }
 
 
-            Tab("history", systemImage: "gobackward") {
+            Tab("history", systemImage: "clock") {
                 historyPage()
             }
             
@@ -20,6 +20,7 @@ struct ContentView: View {
                 profilePage()
             }
         }
+        .accentColor(Color.purple)
     }
 }
 
