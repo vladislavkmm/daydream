@@ -2,7 +2,17 @@ import SwiftUI
 
 struct homePage: View {
     var body: some View {
-        Text("Home")
+        VStack {
+            HStack{
+                Text("test for test")
+            }
+            HStack{
+                Text("test for test")
+            }
+            HStack{
+                Text("test for test")
+            }
+        }
     }
 }
 
