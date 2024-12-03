@@ -11,9 +11,9 @@ struct homePage: View {
             .ignoresSafeArea(edges: .top)
             
             VStack {
-                Text("Homepage Content")
-                    .foregroundColor(.white)
-                    .padding()
+                HStack {
+                    Text("Test")
+                }
             }
         }
     }

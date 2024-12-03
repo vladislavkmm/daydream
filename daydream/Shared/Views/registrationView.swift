@@ -17,7 +17,7 @@ struct registrationView: View {
                 Text("Login")
             }
             if let error = loginError{
-                Text("error")
+                Text(error)
             }
         }
         
@@ -29,7 +29,7 @@ struct registrationView: View {
             isRegistered = true
             loginError = nil
         }else{
-            let loginError = "there is a login error in your login information"
+            loginError = "there is a login error in your login information"
         }
     }
 }

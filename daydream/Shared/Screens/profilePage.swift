@@ -2,7 +2,20 @@ import SwiftUI
 
 struct profilePage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            LinearGradient(
+                gradient: Gradient(colors: [Color.purple, Color.white]),
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .ignoresSafeArea(edges: .top)
+            
+            VStack {
+                HStack {
+                    Text("Test")
+                }
+            }
+        }
     }
 }
 
