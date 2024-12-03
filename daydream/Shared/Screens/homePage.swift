@@ -3,21 +3,18 @@ import SwiftUI
 struct homePage: View {
     var body: some View {
         ZStack {
-            ScrollView{
-                HStack{
-                    Text("test for test")
-                }
-                HStack{
-                    Text("test for test")
-                }
-                HStack{
-                    Text("test for test")
-                }
+            LinearGradient(
+                gradient: Gradient(colors: [Color.purple, Color.white]),
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .ignoresSafeArea(edges: .top)
+            
+            VStack {
+                Text("Homepage Content")
+                    .foregroundColor(.white)
+                    .padding()
             }
         }
     }
-}
-
-#Preview {
-    homePage()
 }

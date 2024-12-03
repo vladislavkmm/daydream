@@ -3,25 +3,28 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Tab("homepage", systemImage: "house") {
-                homePage()
-            }
+            homePage()
+                .tabItem {
+                    Label("Homepage", systemImage: "house")
+                }
 
-            Tab("loans", systemImage: "creditcard") {
-                loansPage()
-            }
+            loansPage()
+                .tabItem {
+                    Label("Loans", systemImage: "creditcard")
+                }
 
+            historyPage()
+                .tabItem {
+                    Label("History", systemImage: "clock")
+                }
 
-            Tab("history", systemImage: "clock") {
-                historyPage()
-            }
-            
-            Tab("profile", systemImage: "person.crop.circle.fill") {
-                profilePage()
-            }
+            profilePage()
+                .tabItem {
+                    Label("Profile", systemImage: "person.crop.circle.fill")
+                }
         }
         .accentColor(Color.purple)
-        .padding(.horizontal)
+        .background(Color.white.ignoresSafeArea()) 
     }
 }
 
