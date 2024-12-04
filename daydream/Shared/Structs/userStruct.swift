@@ -7,4 +7,5 @@ struct User:Identifiable {
     let password:String
     let name:String
     let surname:String
+    let accountValue:Float
 }

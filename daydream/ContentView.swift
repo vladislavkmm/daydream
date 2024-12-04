@@ -23,8 +23,8 @@ struct ContentView: View {
                     Label("Profile", systemImage: "person.crop.circle.fill")
                 }
         }
-        .accentColor(Color.purple)
-        .background(Color.white.ignoresSafeArea()) 
+        .accentColor(Color.orange)
+        .background(Color.white.ignoresSafeArea())
     }
 }
 
