@@ -15,7 +15,14 @@ struct homePage: View {
                             }
                             .ignoresSafeArea(edges: .top)
                         }
-            headerView()
+            VStack{
+                headerView()
+                HStack{
+                    Text("text")
+                    Text("text")
+                    Text("text")
+                }
+            }
             VStack {
                 ZStack{
                     RoundedRectangle(cornerRadius: 20)
@@ -32,7 +39,7 @@ struct homePage: View {
                                 .font(.title)
                                 .padding()
                             Spacer()
-                            Text("USDT")
+                            Text(user.currency)
                                 .padding()
                                 .font(.title2)
                         }

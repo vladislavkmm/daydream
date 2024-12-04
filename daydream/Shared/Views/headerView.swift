@@ -3,6 +3,7 @@ import SwiftUI
 
 struct headerView: View {
     var body: some View {
+        @State var users = users
         HStack{
             HStack{
                 Text("Image")

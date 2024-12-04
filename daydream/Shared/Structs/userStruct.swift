@@ -8,4 +8,5 @@ struct User:Identifiable {
     let name:String
     let surname:String
     let accountValue:Float
+    let currency:String
 }
