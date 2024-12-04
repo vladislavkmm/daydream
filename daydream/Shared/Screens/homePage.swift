@@ -29,6 +29,12 @@ struct homePage: View {
                         let formattedString = String(format: "%.2f", user.accountValue)
                         HStack {
                             Text("\(formattedString)")
+                                .font(.title)
+                                .padding()
+                            Spacer()
+                            Text("USDT")
+                                .padding()
+                                .font(.title2)
                         }
                         .offset(y: -165)
                         .padding()
