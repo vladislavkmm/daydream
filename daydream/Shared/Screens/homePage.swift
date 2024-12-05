@@ -17,11 +17,6 @@ struct homePage: View {
                         }
             VStack{
                 headerView()
-                HStack{
-                    Text("text")
-                    Text("text")
-                    Text("text")
-                }
             }
             VStack {
                 ZStack{
@@ -30,8 +25,8 @@ struct homePage: View {
                         .frame(width: .infinity, height: 120)
                         .offset(y: -165)
                         .padding()
-                    
-                    
+                    subheaderView()
+                        .offset(y: -65)
                     ForEach(users) { user in
                         let formattedString = String(format: "%.2f", user.accountValue)
                         HStack {
