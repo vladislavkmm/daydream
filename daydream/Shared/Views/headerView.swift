@@ -7,7 +7,7 @@ struct headerView: View {
         HStack{
             HStack{
                 Circle() // todo: add image instead of the blank black circle
-                    .frame(width: 50,height: 50)
+                    .frame(width: 60,height: 60)
                 ForEach(users, id: \.login){ user in
                     Text(user.name)
                         .font(.title2)

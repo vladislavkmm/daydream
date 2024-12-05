@@ -9,6 +9,7 @@ struct activityView: View {
                 Spacer()
                 Text("see more")
                     .font(.title3)
+                    .opacity(0.7)
             }
             .padding()
         }
