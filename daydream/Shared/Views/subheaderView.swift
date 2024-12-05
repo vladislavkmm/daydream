@@ -6,7 +6,7 @@ struct subheaderView: View {
             Button(action: {
                 
             }) {
-                Text("text")
+                Text("Add money")
                     .frame(width: 120, height: 30)
                     .padding(12)
                     .background(Color.black)
@@ -18,7 +18,7 @@ struct subheaderView: View {
             Button(action: {
                
             }) {
-                Text("text")
+                Text("Transfer")
                     .frame(width: 120, height: 30)
                     .padding(12)
                     .background(Color.white)
@@ -39,6 +39,13 @@ struct subheaderView: View {
                     .font(.title2)
             }
         }
+        
+        
+        RoundedRectangle(cornerRadius: 20)
+            .fill(Color.white)
+            .frame(width: .infinity,height: 100)
+            .padding()
+            .offset(y:90)
     }
 }
 
