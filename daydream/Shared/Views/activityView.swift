@@ -2,7 +2,16 @@ import SwiftUI
 
 struct activityView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            HStack{
+                Text("All activity")
+                    .font(.title2)
+                Spacer()
+                Text("see more")
+                    .font(.title3)
+            }
+            .padding()
+        }
     }
 }
 

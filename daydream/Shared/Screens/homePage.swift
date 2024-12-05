@@ -43,6 +43,12 @@ struct homePage: View {
                     }
                 }
             }
+            
+            VStack{
+                Spacer()
+                    .frame(height: 220)
+                activityView()
+            }
         }
     }
 }
