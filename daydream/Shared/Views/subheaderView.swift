@@ -30,7 +30,7 @@ struct subheaderView: View {
             Button(action: {
                 
             }) {
-                Text("text")
+                Image(systemName: "line.3.horizontal")
                     .frame(width: 30, height: 30)
                     .padding(12)
                     .background(Color.white)

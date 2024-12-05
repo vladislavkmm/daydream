@@ -6,10 +6,14 @@ struct headerView: View {
         @State var users = users
         HStack{
             HStack{
-                Text("Image")
-                Text("Name")
-                    .font(.title2)
-            }
+                Circle() // todo: add image instead of the blank black circle
+                    .frame(width: 50,height: 50)
+                ForEach(users, id: \.login){ user in
+                    Text(user.name)
+                        .font(.title2)
+                    Text(user.surname)
+                        .font(.title2)
+}            }
             .padding()
             
             Spacer()
