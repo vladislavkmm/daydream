@@ -14,7 +14,7 @@ struct profilePage: View {
             VStack {
                 HStack {
                     VStack{
-                        Circle()
+                        Circle()// add image (to the array and in the profile page) instead of black circle
                             .frame(width: 100)
                         ForEach(users, id:\.login){user in
                             HStack{
