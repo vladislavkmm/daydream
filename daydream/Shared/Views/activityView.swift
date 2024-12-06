@@ -11,7 +11,6 @@ struct activityView: View {
                     .font(.title3)
                     .opacity(0.7)
             }
-            activitycardView()
             .padding()
             
             
