@@ -2,7 +2,9 @@ import SwiftUI
 
 struct activitycardView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        RoundedRectangle(cornerRadius: 25)
+            .fill(Color.white)
+            .frame(width: .infinity, height: 120)
     }
 }
 
