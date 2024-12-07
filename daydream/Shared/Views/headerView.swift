@@ -13,7 +13,7 @@ struct headerView: View {
                     .foregroundColor(.black)
                 
                 ForEach(users, id: \.login) { user in
-                    VStack(alignment: .leading) {
+                    HStack() {
                         Text(user.name)
                             .font(.title2)
                         Text(user.surname)
