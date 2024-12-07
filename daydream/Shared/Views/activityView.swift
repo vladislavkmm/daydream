@@ -13,7 +13,7 @@ struct activityView: View {
             }
             .padding()
             activitycardView()
-                .padding()
+                .padding(.horizontal)
             
         }
     }
