@@ -1,8 +1,6 @@
 import SwiftUI
 
 struct homePage: View {
-    // Переместил в начало структуры, чтобы избежать ошибок
-    
     var body: some View {
         @State var users = users 
         ZStack {
@@ -20,18 +18,19 @@ struct homePage: View {
             
             VStack {
                 headerView()
-                    .padding(.top, 20) // Убедитесь, что верхнее пространство достаточное
+                    .padding(.top, -160)
                 
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
                         .fill(Color.white)
                         .frame(height: 120)
-                        .padding(.horizontal) // Добавляем горизонтальные отступы
+                        .padding(.horizontal)
+                        .padding(.bottom,280)
                     
                     VStack(spacing: 16) {
                         subheaderView()
                         
-                        // Для пользователей отображаем список данных
+                        
                         ForEach(users) { user in
                             let formattedString = String(format: "%.2f", user.accountValue)
                             HStack {
@@ -42,8 +41,8 @@ struct homePage: View {
                                 Text(user.currency)
                                     .font(.title2)
                                     .padding(.horizontal)
-                            }
-                            .padding(.vertical, 5) // Отступы по вертикали
+                            }.padding(.top,-205)
+                            .padding(.vertical, 30) // Отступы по вертикали
                         }
                     }
                     .padding(.horizontal)
@@ -54,8 +53,9 @@ struct homePage: View {
                     .frame(height: 60)
                 
                 activityView()
+                    .padding(.top, -250)
             }
-            .padding(.top, 100) // Дополнительный отступ сверху для всех элементов
+            .padding(.top) // Дополнительный отступ сверху для всех элементов
         }
     }
 }
