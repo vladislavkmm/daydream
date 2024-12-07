@@ -42,12 +42,12 @@ struct homePage: View {
                                     .font(.title2)
                                     .padding(.horizontal)
                             }.padding(.top,-205)
-                            .padding(.vertical, 30) // Отступы по вертикали
+                            .padding(.vertical, 30) 
                         }
                     }
                     .padding(.horizontal)
                 }
-                .padding(.top, 10) // Меньший отступ сверху, чтобы карта была ближе к градиенту
+                .padding(.top, 10)
                 
                 Spacer()
                     .frame(height: 60)
@@ -55,7 +55,7 @@ struct homePage: View {
                 activityView()
                     .padding(.top, -250)
             }
-            .padding(.top) // Дополнительный отступ сверху для всех элементов
+            .padding(.top)
         }
     }
 }

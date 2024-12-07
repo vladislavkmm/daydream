@@ -4,7 +4,7 @@ struct subheaderView: View {
     var body: some View {
         VStack(spacing: 16) {
             HStack(spacing: 20) {
-                // Кнопка "Add Money"
+                
                 Button(action: {}) {
                     Text("Add money")
                         .frame(width: 120, height: 30)
@@ -15,7 +15,7 @@ struct subheaderView: View {
                         .font(.title2)
                 }
                 
-                // Кнопка "Transfer"
+               
                 Button(action: {}) {
                     Text("Transfer")
                         .frame(width: 120, height: 30)
@@ -26,7 +26,7 @@ struct subheaderView: View {
                         .font(.title2)
                 }
                 
-                // Кнопка с изображением меню
+                
                 Button(action: {}) {
                     Image(systemName: "line.3.horizontal")
                         .frame(width: 30, height: 30)
@@ -38,7 +38,7 @@ struct subheaderView: View {
                 }
             }
         }
-        .padding(.top, 30) // Даем отступ сверху
+        .padding(.top, 30) 
     }
 }
 

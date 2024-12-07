@@ -7,12 +7,11 @@ struct headerView: View {
         @State var users = users
         HStack {
             HStack {
-                Image(systemName: "person.circle.fill") // Используем изображение вместо круга
+                Image(systemName: "person.circle.fill") 
                     .resizable()
                     .frame(width: 60, height: 60)
                     .foregroundColor(.black)
                 
-                // Отображаем имя и фамилию пользователя
                 ForEach(users, id: \.login) { user in
                     VStack(alignment: .leading) {
                         Text(user.name)
@@ -24,9 +23,9 @@ struct headerView: View {
             }
             .padding()
             
-            Spacer() // Отступ для сдвига элементов влево
+            Spacer()
         }
-        .padding(.top, 20) // Меньше отступа сверху
+        .padding(.top, 20)
     }
 }
 
