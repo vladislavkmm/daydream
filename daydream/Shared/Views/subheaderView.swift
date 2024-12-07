@@ -2,50 +2,43 @@ import SwiftUI
 
 struct subheaderView: View {
     var body: some View {
-        HStack {
-            Button(action: {
+        VStack(spacing: 16) {
+            HStack(spacing: 20) {
+                // Кнопка "Add Money"
+                Button(action: {}) {
+                    Text("Add money")
+                        .frame(width: 120, height: 30)
+                        .padding(12)
+                        .background(Color.black)
+                        .cornerRadius(20)
+                        .foregroundColor(.white)
+                        .font(.title2)
+                }
                 
-            }) {
-                Text("Add money")
-                    .frame(width: 120, height: 30)
-                    .padding(12)
-                    .background(Color.black)
-                    .cornerRadius(20)
-                    .foregroundColor(.white)
-                    .font(.title2)
-            }
-
-            Button(action: {
-               
-            }) {
-                Text("Transfer")
-                    .frame(width: 120, height: 30)
-                    .padding(12)
-                    .background(Color.white)
-                    .cornerRadius(20)
-                    .foregroundColor(.black)
-                    .font(.title2)
-            }
-
-            Button(action: {
+                // Кнопка "Transfer"
+                Button(action: {}) {
+                    Text("Transfer")
+                        .frame(width: 120, height: 30)
+                        .padding(12)
+                        .background(Color.white)
+                        .cornerRadius(20)
+                        .foregroundColor(.black)
+                        .font(.title2)
+                }
                 
-            }) {
-                Image(systemName: "line.3.horizontal")
-                    .frame(width: 30, height: 30)
-                    .padding(12)
-                    .background(Color.white)
-                    .cornerRadius(50)
-                    .foregroundColor(.black)
-                    .font(.title2)
+                // Кнопка с изображением меню
+                Button(action: {}) {
+                    Image(systemName: "line.3.horizontal")
+                        .frame(width: 30, height: 30)
+                        .padding(12)
+                        .background(Color.white)
+                        .cornerRadius(50)
+                        .foregroundColor(.black)
+                        .font(.title2)
+                }
             }
         }
-        
-        
-        RoundedRectangle(cornerRadius: 20)
-            .fill(Color.white)
-            .frame(width: .infinity,height: 100)
-            .padding()
-            .offset(y:90)
+        .padding(.top, 30) // Даем отступ сверху
     }
 }
 
