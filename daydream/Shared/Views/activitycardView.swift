@@ -7,9 +7,11 @@ struct activitycardView: View {
                 .fill(Color.white)
                 .frame(width: .infinity, height: 120)
             HStack{
-                Text("test")
+                Text("Food")
+                    .font(.title)
                 Spacer()
-                Text("test")
+                Text("100")
+                    .font(.title2)
             }.padding()
         }
         
