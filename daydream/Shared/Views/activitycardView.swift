@@ -10,7 +10,7 @@ struct activitycardView: View {
                 Text("Food")
                     .font(.title)
                 Spacer()
-                Text("100$")
+                Text("100$") // add data to the array and hen map it
                     .font(.title2)
             }.padding()
         }
