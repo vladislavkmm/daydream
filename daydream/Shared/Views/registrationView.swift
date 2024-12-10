@@ -5,6 +5,7 @@ struct registrationView: View {
     @State private var userLogin: String = ""
     @State private var userPassword: String = ""
     @State private var loginError:String? = nil
+    
     var body: some View {
         ZStack {
             LinearGradient(
