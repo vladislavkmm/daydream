@@ -5,7 +5,7 @@ struct profilePage: View {
         @State var users = users
         ZStack {
             LinearGradient(
-                gradient: Gradient(colors: [Color.purple, Color.white]),
+                gradient: Gradient(colors: [Color.orange, Color.white]),
                 startPoint: .top,
                 endPoint: .bottom
             )
