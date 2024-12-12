@@ -10,7 +10,7 @@ struct profilePage: View {
                 endPoint: .bottom
             )
             .ignoresSafeArea(edges: .top)
-            
+            //add styles
             VStack {
                 HStack {
                     VStack{
